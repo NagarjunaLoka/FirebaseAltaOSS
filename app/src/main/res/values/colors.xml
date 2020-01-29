@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffb300</color>
+    <color name="colorPrimaryDark">#eba80c</color>
+    <color name="colorAccent">#eba80c</color>
+    <color name="colorRadioButtonChecked">#23A7D8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gradStart">#19AA88</color>
+    <color name="gradStop">#23A7D8</color>
+    <color name="colorText">#dddddd</color>
+    <color name="colorHint">#959595</color>
+    <color name="colorGrapeFruit">#ED5565</color>
+    <color name="colorGrapeFruitDark">#DA4453</color>
+    <color name="colorBitterSweet">#FC6E51</color>
+    <color name="colorBitterSweetDark">#E9573F</color>
+    <color name="colorFlower">#FFCE54</color>
+    <color name="colorFlowerDark">#F68B42</color>
+    <color name="colorGrass">#A0D468</color>
+    <color name="darkorange">#F39E58</color>
+    <color name="colorGrassDark">#8CC152</color>
+    <color name="colorBlueJeans">#509CEC</color>
+    <color name="colorBlueJeansDark">#4A89DC</color>
+    <color name="colorLavander">#AC92EC</color>
+    <color name="colorLavanderDark">#967ADC</color>
+    <color name="colorMint">#48CFAD</color>
+    <color name="colorMintDark">#37BC9B</color>
+    <color name="colorAqua">#4FC1E9</color>
+    <color name="colorAquaDark">#3BAFDA</color>
+    <color name="colorPinkRose">#EC87C0</color>
+    <color name="colorPinkRoseDark">#D770AD</color>
+    <color name="starblue">#09df86</color>
+    <color name="endblue">#0bcce4</color>
+    <color name="yellow">#ffb300</color>
+    <color name="Blue">#008ae6</color>
+    <color name="colorAppBackground">#f2f2f2</color>
+    <color name="orange">#e6ac00</color>
+    <color name="green">#00bfa5</color>
+    <color name="navyBlue">#000080</color>
+    <color name="colorCell">#015093</color>
+
+    <color name="colorIndivateTab">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorCardView">#f7f7f7</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_500">#a4a4a4</color>
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_800">#212121</color>
+    <color name="black">#0C0000</color>
+    <color name="fui_transparent">#00000000</color>
+
+
+    <!-- Colours for SmoothProgressBar -->
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#b23424</color>
+
+    <color name="orange1">#f56342</color>
+    <color name="lightyellow">#e6f542</color>
+    <color name="color1">#dbcea2</color>
+    <color name="color2">#71e65a</color>
+
+    <color name="color3">#92e8e4</color>
+    <color name="color4">#885ab0</color>
+    <color name="color5">#b85677</color>
+    <color name="color6">#b356b8</color>
+
+
+
+    <integer-array name="gplus_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_4</item>
+    </integer-array>
+
+
+    <!-- IntroScreen background color-->
+    <color name="bg_slider_screen1">#f4b241</color>
+    <color name="bg_slider_screen2">#16bc7d</color>
+    <color name="bg_slider_screen3">#203d8c</color>
+    <!-- dots inactive colors -->
+    <color name="dot_inactive_screen1">#ffa000</color>
+    <color name="dot_inactive_screen2">#008c57</color>
+    <color name="dot_inactive_screen3">#0e1e49</color>
+    <color name="dot_inactive_screen4">#0a80d1</color>
+    <!-- dots active colors -->
+    <color name="dot_active_screen1">#f9c772</color>
+    <color name="dot_active_screen2">#74f7c5</color>
+    <color name="dot_active_screen3">#3a67e0</color>
+    <color name="dot_active_screen4">#334353</color>
+    <array name="array_dot_active">
+        <item>@color/dot_active_screen4</item>
+        <item>@color/dot_active_screen4</item>
+        <item>@color/dot_active_screen4</item>
+        <item>@color/dot_active_screen4</item>
+    </array>
+    <array name="array_dot_inactive">
+        <item>@color/dot_inactive_screen4</item>
+        <item>@color/dot_inactive_screen4</item>
+        <item>@color/dot_inactive_screen4</item>
+        <item>@color/dot_inactive_screen4</item>
+    </array>
+</resources>

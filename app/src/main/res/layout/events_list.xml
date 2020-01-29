@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/fstline"
+            android:hint="Event Id"
+            android:textColorHint="#a46a05"
+            android:textAlignment="center"
+            android:textColor="#a46a05"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/evnme"
+            android:layout_width="175dp"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:textColor="#286bf4"
+            android:layout_height="wrap_content"
+            android:hint="event Name"/>
+        <TextView
+            android:id="@+id/evdes"
+            android:textColor="#286bf4"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:hint="event description"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/second"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/godate"
+            android:layout_width="175dp"
+            android:textColor="#286bf4"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:hint="Godate"/>
+        <TextView
+            android:id="@+id/todate"
+            android:textColor="#286bf4"
+            android:layout_width="175dp"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:hint="todate"/>
+    </LinearLayout>
+</RelativeLayout>

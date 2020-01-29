@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/alta"
+    tools:context=".Show_Reference_List">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/yellow">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/logo"
+                app:srcCompat="@mipmap/ic_launcher_logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ALTA OSS"
+                android:layout_gravity="center"
+                android:textColor="@color/Blue"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linear"
+        android:layout_below="@+id/toolbar">
+        <HorizontalScrollView
+            android:id="@+id/hsv1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:fillViewport="true"
+            android:measureAllChildren="false"
+            android:scrollbars="none"
+            android:background="@color/Blue">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@color/Blue">
+
+                <ImageView
+                    android:id="@+id/iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tint="@color/white"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Admin Dashboard  >>"
+                    android:id="@+id/dashboard"
+                    android:fontFamily="@font/bellb"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/list"
+                    android:layout_gravity="center"
+                    android:text="  Interviews  >>"
+                    android:fontFamily="@font/bellb"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/history"
+                    android:text="  Reference List>>"
+                    android:fontFamily="@font/bellb"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=" Candidate Details"
+                    android:fontFamily="@font/bellb"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        <HorizontalScrollView
+            android:id="@+id/hsv2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fillViewport="true"
+            android:measureAllChildren="false"
+            android:scrollbars="none"
+            android:visibility="gone"
+            android:background="@color/Blue">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@color/Blue">
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tint="@color/white"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" HR Dashboard  >>"
+                    android:id="@+id/dashboard1"
+                    android:fontFamily="@font/bellb"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/list1"
+                    android:layout_gravity="center"
+                    android:text="  Interviews  >>"
+                    android:fontFamily="@font/bellb"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/history1"
+                    android:text="  Reference List >>"
+                    android:fontFamily="@font/bellb"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="  Candidate Details"
+                    android:fontFamily="@font/bellb"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userid"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usertype"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tedetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Details of interview list"
+        android:gravity="center"
+        android:layout_below="@+id/linear"
+        android:textColor="#3e403e"
+        android:textSize="20dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/nameeq"
+        android:layout_below="@+id/tedetails"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Interview id = "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3e403e"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:id="@+id/textView1"
+            />
+        <TextView
+            android:text="id Show Here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:id="@+id/inid"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/quali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/nameeq"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Name = "
+            android:textColor="#3e403e"
+            android:textSize="20dp" />
+
+        <TextView
+            android:text="Name Show Here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#090909"
+            android:textSize="20dp"
+            android:id="@+id/name"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_toEndOf="@+id/textView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emaiid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/quali"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Fresher/ exp = "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3e403e"
+            android:textSize="20dp"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+
+        <TextView
+            android:text="Name Show Here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#090909"
+            android:textSize="20dp"
+            android:id="@+id/fre"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_toEndOf="@+id/textView" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/mobileno"
+        android:layout_below="@+id/emaiid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Mobile = "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3e403e"
+            android:textSize="20dp"
+            android:id="@+id/textView3"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+
+        <TextView
+            android:text="Name Show Here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#090909"
+            android:textSize="20dp"
+            android:id="@+id/phone"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_toEndOf="@+id/textView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/proje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/mobileno"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="desigantion = "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3e403e"
+            android:textSize="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+
+        <TextView
+            android:text="Project Show Here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#090909"
+            android:textSize="20dp"
+            android:id="@+id/destion"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_toEndOf="@+id/textView" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/referrname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/proje"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Reference Name = "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3e403e"
+            android:textSize="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+
+        <TextView
+            android:text="Referencename Show Here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#090909"
+            android:textSize="20dp"
+            android:id="@+id/refrename"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_toEndOf="@+id/textView" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rerefeid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/referrname"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="referenceid = "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3e403e"
+            android:textSize="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+
+        <TextView
+            android:text="reference Show Here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#090909"
+            android:textSize="20dp"
+            android:id="@+id/refeerid"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_toEndOf="@+id/textView" />
+    </LinearLayout>
+
+
+    <Button
+        android:text="Edit This Record"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorFlower"
+        android:textAllCaps="false"
+        android:layout_below="@+id/rerefeid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:id="@+id/buttonUpdate" />
+
+    <Button
+        android:text="Select this Candidate"
+        android:layout_width="200dp"
+        android:layout_below="@+id/buttonUpdate"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorFlower"
+        android:textAllCaps="false"
+        android:id="@+id/selected" />
+    <Button
+        android:text="Reject This Candidate"
+        android:layout_width="200dp"
+        android:layout_below="@+id/selected"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorFlower"
+        android:textAllCaps="false"
+        android:id="@+id/rejected" />
+
+    <Button
+        android:text="Not Confirmed"
+        android:layout_width="200dp"
+        android:layout_below="@+id/rejected"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorFlower"
+        android:textAllCaps="false"
+        android:id="@+id/notconfirmed" />
+
+
+
+</RelativeLayout>

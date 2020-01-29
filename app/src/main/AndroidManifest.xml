@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.anushak.firebasealtaoss">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/altaa"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/altaa"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".EmployeeLeaveHistory"></activity>
+        <activity android:name=".AdminLeaveHistory" />
+        <activity android:name=".LeavesHistory" />
+        <activity android:name=".IMEI" />
+        <activity
+            android:name=".EmpAttendanceHistory"
+            android:screenOrientation="portrait" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".Visitor"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AttendanceSample"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminAttendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AttendanceNew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FaceReg"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".YearlyAttendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AttEmpDirectory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Leave"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CC_Camera"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Services"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewsFeed"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NotificationsDashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NotificationUpdate"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="face" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".Attendance_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".updateoffcampus_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Select_date_in_Emp_PaySlips"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Emp_Payslips1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".My_Signle_Payslip_Form"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Emp_PaySlips"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PaySlips_Form"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Employees_in_Dept"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HrPayslips"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminVisUpdate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminVisEditDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminEditVisitor"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminVisList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VisitorDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VisDirectory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Addvisitor"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VisitorDashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".show_offcampus_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".addoffcampus_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".offcampus_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".updateschedule_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".show_schedule_list_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".addschedule_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".scheduleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".updatereferenceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddReferenceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Show_Reference_List"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReferenceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pending_Candidates"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Rejected_Candidates"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Selected_Candidates"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".InterviewHistory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Update_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddinterviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Show_Interview_List"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WalkinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".InterviewDashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyProjects"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProjectEmpList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProjectPreferences"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Permissions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Preferences"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShowEventActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Holidays"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EventActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CalendarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyRewards"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EmpRewards"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EmpQueryDashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyDownloads"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EmpDoc"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Documents"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Solved_Tickets"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pending_Tickets"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Total_Tickets"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".My_Task_Single"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Assigned_Tickets"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Closed_Tickets"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Open_Tickets"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".My_Tickets"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ticket_Raising_Form"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ticketing_Dashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PayDocuments1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PayDocuments"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Retrieve"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PayrollDocuments"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HrReimbursement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EmpPayroll"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MobileStatus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Mobile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReimbursementDashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EmpDocuments"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Rewards"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DocumentsUpload"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PaySlips"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReimbursementUpload"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyPay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewUpdate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OurUpdates"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProjectDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EmpProjects"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".QueryUpdate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".QueryDashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".QueryForm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Job_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CreateJob"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Careers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProjectsList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewProject"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EmpDirectory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Security"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ContactUs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HelpDesk"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutUs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewEmployee"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".EmployeeDashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HrDashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminDashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivityChat"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1.NoActionBar" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AddGroupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyThemeNoActionbar" />
+        <activity
+            android:name=".ui.ForwardActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.MembersList"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Preview"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.VideoPlayerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.FullScreenImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeFullScreenImage" />
+        <activity
+            android:name=".Settings1"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".service.FriendChatService"
+            android:exported="false"
+            android:persistent="true"
+            android:screenOrientation="portrait" />
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:screenOrientation="portrait"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

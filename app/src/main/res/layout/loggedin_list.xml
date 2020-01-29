@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parent_layout">
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="date" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:id="@+id/l1"
+            android:padding="7dp">
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LoggedIn  "
+                android:textColor="@color/yellow"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/loggedin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="loggedin"
+                android:textColor="@color/green"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="address"
+                android:textColor="@color/Blue"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="#fa2c07"
+                    android:textStyle="bold"
+                    android:text="Note:  " />
+
+                <TextView
+                    android:id="@+id/note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="note"
+                    android:textColor="@color/black"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:text="Service No:  " />
+
+                <TextView
+                    android:id="@+id/serviceno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="service no"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:text="Model No:  " />
+
+                <TextView
+                    android:id="@+id/modelno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="model no"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/lat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:hint="lat" />
+
+            <TextView
+                android:id="@+id/langt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:hint="lat" />
+        </LinearLayout>
+
+            <Button
+                android:layout_width="1dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@color/Blue"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:id="@+id/l2"
+            android:padding="7dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LoggedOut"
+                    android:textColor="@color/yellow"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/outloggedout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="loggedout"
+                    android:textColor="@color/green"
+                    android:layout_marginLeft="20dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/outaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="adress"
+                android:textColor="@color/Blue"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="#fa2c07"
+                    android:textStyle="bold"
+                    android:text="Note:  " />
+
+                <TextView
+                    android:id="@+id/outnote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="note"
+                    android:textColor="@color/black"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:text="Service No:  " />
+
+                <TextView
+                    android:id="@+id/outserviceno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="service no"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:text="Model No:  " />
+
+                <TextView
+                    android:id="@+id/outmodelno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="model no"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Working Hours"
+                    android:textColor="@color/yellow"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/workinghrs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="working hours"
+                    android:textColor="@color/green"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/outlat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:hint="lat" />
+
+            <TextView
+                android:id="@+id/outlangt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:hint="lat" />
+
+
+        </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

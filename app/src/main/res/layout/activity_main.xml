@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/alta"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/yellow">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/logo"
+                app:srcCompat="@mipmap/ic_launcher_logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alta OSS"
+                android:layout_gravity="center"
+                android:textColor="#2A82DC"
+                android:textSize="20dp"
+                android:fontFamily="@font/bellb"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/empid"
+        android:hint="employee"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deptt"
+        android:visibility="invisible"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/ic_launcher_logo"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bellb"
+                        android:text="ALTA IT SOLUTIONS"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bellb"
+                        android:text="Pack of Creativity"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/locationText"
+                        android:textColor="@color/Blue"
+                        android:textSize="10sp"
+                        android:visibility="gone"
+                        android:layout_marginTop="10dp"
+                        android:hint="location"
+                        android:textColorHint="@color/Blue" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/time"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:hint="Time"
+                android:textColorHint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sam"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:hint="Time"
+                android:textColorHint="@color/white" />
+
+        <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColorHint="#ffffff">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffffff"
+            android:id="@+id/email"
+            android:text="jayarajkadiveti@gmail.co"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:hint="   Username"
+            android:drawableTint="@color/yellow"
+            android:inputType="textPersonName"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#ffffff">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffffff"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawableTint="@color/yellow"
+            android:hint="   Password"
+            android:id="@+id/password"
+            android:text="jaya@123"
+            android:inputType="textPassword"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Admin"
+            android:theme="@style/RadioButtonTheme"
+            android:drawableLeft="@drawable/ic_group_add_black_24dp"
+            android:textSize="17sp"
+            android:onClick="onRadioButtonClicked"
+            android:fontFamily="@font/timesbd"
+            android:buttonTint="@color/yellow"
+            android:textColor="@color/white"
+            android:id="@+id/adminrd"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Hr"
+            android:id="@+id/hrrd"
+            android:fontFamily="@font/timesbd"
+            android:onClick="onRadioButtonClicked"
+            android:theme="@style/RadioButtonTheme"
+            android:drawableLeft="@drawable/ic_business_center_black_24dp"
+            android:textSize="17sp"
+            android:buttonTint="@color/yellow"
+            android:textColor="@color/white" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Employee"
+            android:fontFamily="@font/timesbd"
+            android:onClick="onRadioButtonClicked"
+            android:theme="@style/RadioButtonTheme"
+            android:drawableLeft="@drawable/ic_assignment_ind_white_24dp"
+            android:textSize="17sp"
+            android:id="@+id/emprd"
+            android:buttonTint="@color/yellow"
+            android:textColor="@color/white" />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/login_btn"
+        android:text="Login"
+        android:id="@+id/login"
+        android:textSize="20dp"
+        android:fontFamily="@font/timesbi"
+        android:textColor="@color/white"
+        android:textAllCaps="false"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp"
+                android:background="@drawable/login_btn"
+                android:text="Visitor"
+                android:id="@+id/visitor"
+                android:textSize="20dp"
+                android:fontFamily="@font/timesbi"
+                android:textColor="@color/white"
+                android:textAllCaps="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/realisticademo"
+                android:id="@+id/register"
+                android:visibility="gone"
+                android:text="Register Here"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="@font/timesbd"
+        android:id="@+id/forgot"
+        android:layout_marginTop="16dp"
+        android:text="Forgot Password?"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

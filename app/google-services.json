@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "798407141629",
+    "firebase_url": "https://fir-altaoss.firebaseio.com",
+    "project_id": "fir-altaoss",
+    "storage_bucket": "fir-altaoss.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798407141629:android:1fb830345d784375",
+        "android_client_info": {
+          "package_name": "com.example.anushak.firebasealtaoss"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "798407141629-mrq7egnd0o9922a3q0b5p1vpv8te7ken.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.anushak.firebasealtaoss",
+            "certificate_hash": "4b9b21574c185ecccd836ea0d6b3766fd77145ca"
+          }
+        },
+        {
+          "client_id": "798407141629-r7u1893lousdc6kk9l530ba2s455uo1l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgvu_qIRhDPwN33sK8DFI11Qs0nDciV3I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "798407141629-r7u1893lousdc6kk9l530ba2s455uo1l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

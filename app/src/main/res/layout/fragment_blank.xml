@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bcg"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/l1"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mobile"
+            android:text="Mobile Applications"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/web"
+            android:text="Web Applications"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Applications"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:text="One of the fastest-growing operating systems, Android is ruling the world, with over 2 billion monthly active users (2018). It is an open-source and cost-effective OS that is jam-packed with several beneficial features like simple and user-friendly interface, memory management, rich development environment, sigher success ratio, inter-app integration, etc. Transform your business with Android-based mobile apps and reach over 70% of Android users worldwide, leveraging our mobile app and software development services for Android devices."
+            android:textColor="#ffff"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/content1"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Web Applications"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:text="The way businesses depend on software have undergone a notable shift as more emphasis is given on tools that resolve day-to-day business challenges and nurture productivity. Earlier SaaS was the key model that companies adopted, but that is no longer the case considering increased costs, limited customizations and vague data ownership terms. Moreover, as business workflows become more elaborate, custom software that can solve business needs without having to work around the limitations of off-the-shelf software become necessary."
+            android:textColor="#ffff"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

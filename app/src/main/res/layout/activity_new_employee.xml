@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF"
+    tools:context=".NewEmployee">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/referalcode"
+        android:visibility="invisible"/>
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#3399ff">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/logo"
+                app:srcCompat="@mipmap/ic_launcher_logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alta OSS"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:fontFamily="@font/bellb"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/facereg"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_facereg"/>
+</RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ll"
+        android:layout_below="@+id/toolbar">
+        <HorizontalScrollView
+            android:id="@+id/hsv1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:fillViewport="true"
+            android:measureAllChildren="false"
+            android:scrollbars="none"
+            android:background="#009999">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="#009999">
+
+                <ImageView
+                    android:id="@+id/iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tint="@color/white"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" HR Dashboard  >>"
+                    android:id="@+id/dashboard"
+                    android:fontFamily="@font/bellb"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/bellb"
+                    android:text="  New Employee Form"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/userid"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/text"
+        android:visibility="gone"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5fb0c9"
+        android:layout_below="@+id/ll"
+        android:orientation="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+        <TextView
+            android:id="@+id/login_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="22dp"
+            android:gravity="center_horizontal"
+            android:text="New Employee Form"
+            android:textColor="#fff"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/login_title"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="50dp"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="30dp">
+
+                    <EditText
+                        android:id="@+id/edit_text_empid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/empid_24dp"
+                        android:hint="   Employee ID"
+                        android:inputType="textPersonName"/>
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/department"
+                        android:entries="@array/Department"/>
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/departmenttype"
+                        android:entries="@array/DepartmentType"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@android:color/black"/>
+
+                    <EditText
+                        android:id="@+id/designation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/designation1"
+                        android:hint="   Designation"
+                        android:inputType="textPersonName"/>
+
+                    <EditText
+                        android:id="@+id/edit_text_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_empname"
+                        android:layout_marginTop="10dp"
+                        android:hint="   Firstname"/>
+
+                    <EditText
+                        android:id="@+id/middlename"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_empname"
+                        android:hint="   Middlename"
+                        android:layout_marginTop="10dp"/>
+
+                    <EditText
+                        android:id="@+id/lastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_empname"
+                        android:hint="   Lastname"
+                        android:layout_marginTop="10dp"/>
+
+
+                    <EditText
+                        android:id="@+id/edit_text_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/ic_emailemp"
+                        android:hint="   Email"
+                        android:inputType="textEmailAddress"/>
+
+
+                    <EditText
+                        android:id="@+id/edit_text_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/ic_passwordnew"
+                        android:hint="   Password"
+                        android:inputType="textPassword"
+                        android:nextFocusDown="@id/edit_text_phone"
+                        android:textColor="@color/colorText"/>
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="left"
+                        android:layout_marginTop="15dp"
+                        android:paddingRight="50dp">
+
+                        <RadioButton
+                            android:id="@+id/male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male"
+                            android:onClick="onRadioButtonClicked"
+                            tools:ignore="OnClick" />
+
+                        <RadioButton
+                            android:id="@+id/female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female"
+                            android:layout_marginLeft="25dp"
+                            android:onClick="onRadioButtonClicked"
+                            tools:ignore="OnClick" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/gender"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/date"
+                        android:weightSum="2">
+
+                        <EditText
+                            android:id="@+id/dob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:drawableLeft="@drawable/ic_cake"
+                            android:hint="   Date of Birth"/>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.7"
+                            app:srcCompat="@drawable/ic_date_range_black_24dp"
+                            android:id="@+id/date_dob"
+                            android:layout_marginRight="5dp"
+                            tools:ignore="VectorDrawableCompat" />
+                    </LinearLayout>
+
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/etBloodGroup"
+                        android:entries="@array/BloodGroup"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@android:color/black"/>
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/spidentity"
+                        android:entries="@array/Details"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@android:color/black"/>
+
+                    <EditText
+                        android:id="@+id/etDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="   Number"
+                        android:inputType="text"/>
+
+                    <EditText
+                        android:id="@+id/edit_text_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="0123456789"
+                        android:drawableLeft="@drawable/ic_phonenew"
+                        android:hint="   Phone"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:nextFocusDown="@id/button_register" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/date1"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="2">
+
+
+                        <EditText
+                            android:id="@+id/etInterviewSchedule"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:drawableLeft="@drawable/ic_schedule_24dp"
+                            android:layout_weight="0.3"
+                            android:hint="   Interview Schedule"/>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_date_range_black_24dp"
+                            android:layout_weight="1.7"
+                            android:layout_marginRight="5dp"
+                            android:id="@+id/date_Interview"
+                            tools:ignore="VectorDrawableCompat" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/etInterviewDoneBy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/ic_interviewer_24dp"
+                        android:hint="   Interview Done By"
+                        android:inputType="textCapWords" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/date2"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="2">
+
+                        <EditText
+                            android:id="@+id/etDateofJoining"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:drawableLeft="@drawable/ic_doj"
+                            android:layout_weight="0.3"
+                            android:hint="   Date of Joining"  />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_date_range_black_24dp"
+                            android:layout_weight="1.7"
+                            android:id="@+id/date_doj"
+                            android:layout_marginRight="20dp"
+                            tools:ignore="VectorDrawableCompat" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/l1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="   Contact Details"
+                            android:drawableLeft="@drawable/ic_contact_details"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="210dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="191dp"
+                            android:text="Permanent Address:"
+                            android:textColor="@android:color/holo_green_dark"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/etPermanentAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="246dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="191dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Correspondence Address:"
+                            android:textColor="@android:color/holo_green_dark"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/etCorresspondenceAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/etOfficialEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:drawableLeft="@drawable/ic_emailemp"
+                        android:hint="   Official Email"
+                        android:inputType="textEmailAddress"
+                        android:layout_marginTop="10dp" />
+
+                    <EditText
+                        android:id="@+id/etPersonalEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_emailemp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:hint="   Personal Email"
+                        android:inputType="textEmailAddress"
+                        android:layout_marginTop="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linear"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/otherdetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:text="   Other Details:"
+                            android:textColor="@android:color/holo_green_dark"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/projectmanagermail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:drawableLeft="@drawable/ic_emailemp"
+                            android:hint="   Project Manager Mail"
+                            android:layout_marginTop="10dp"/>
+
+                        <EditText
+                            android:id="@+id/projectmanagerid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:drawableLeft="@drawable/empid_24dp"
+                            android:hint="   Project Manager ID"
+                            android:layout_marginTop="10dp"/>
+
+                        <EditText
+                            android:id="@+id/hrmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:drawableLeft="@drawable/ic_emailemp"
+                            android:hint="   HR Mail"
+                            android:layout_marginTop="10dp"/>
+
+                        <EditText
+                            android:id="@+id/hrid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:drawableLeft="@drawable/empid_24dp"
+                            android:hint="   HR ID"
+                            android:layout_marginTop="10dp"/>
+
+
+                        <EditText
+                            android:id="@+id/accountno"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:drawableLeft="@drawable/ic_acc_no"
+                            android:hint="   Account no:"
+                            android:layout_marginTop="10dp"/>
+
+                        <EditText
+                            android:id="@+id/bankname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_bank"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:hint="   Bank Name"
+                            android:layout_marginTop="10dp"/>
+
+                        <EditText
+                            android:id="@+id/ifsccode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:hint="   IFSC Code"
+                            android:drawableLeft="@drawable/ic_ifsc"
+                            android:layout_marginTop="10dp"/>
+
+                        <EditText
+                            android:id="@+id/cardname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:drawableLeft="@drawable/ic_card"
+                            android:layout_marginRight="10dp"
+                            android:hint="   Card Holder Name"
+                            android:layout_marginTop="10dp"/>
+
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:entries="@array/Security"
+                            android:layout_marginTop="10dp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@android:color/black"/>
+
+                        <EditText
+                            android:id="@+id/answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:drawableLeft="@drawable/ic_answer"
+                            android:hint="   Answer:"
+                            android:layout_marginTop="10dp"/>
+
+                        <Button
+                            android:id="@+id/button_register"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#d67601"
+                            android:text="Register"
+                            android:textStyle="bold"
+                            android:layout_margin="22dp"
+                            android:textSize="25dp"
+                            android:textAllCaps="false" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/login_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/user_profile_image_background"
+            android:elevation="4dp"
+            android:src="@drawable/ic_person_black_24dp" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

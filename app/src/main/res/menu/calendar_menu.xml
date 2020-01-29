@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/publicholiday"
+        android:title="Public Holiday"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/Event"
+        android:title="Events"
+        app:showAsAction="never"/>
+</menu>

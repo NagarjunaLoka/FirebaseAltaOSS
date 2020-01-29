@@ -1,0 +1,377 @@
+<resources>
+
+    <string name="app_name"><font fgcolor='#008ae6'>AltaOSS</font></string>
+    <string name="query"><font fgcolor='#008ae6'>Query</font></string>
+    <string name="close">Close</string>
+    <string name="open">Open</string>
+    <string name="full_name">full name</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="phone">phone</string>
+    <string name="register">Register</string>
+    <string name="input_error_name">name required</string>
+    <string name="input_error_email">email required</string>
+    <string name="input_error_password">password required</string>
+    <string name="input_error_phone">phone required</string>
+    <string name="input_error_empid">Employee ID required</string>
+    <string name="input_error_password_length">password should be atleast 6 characters long</string>
+    <string name="input_error_phone_invalid">enter a valid phone number</string>
+    <string name="registration_success">Registered Successfully</string>
+    <string name="input_error_email_invalid">enter a valid email</string>
+    <string name="home">Home</string>
+    <string name="change_password">Change Password</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="uploadImages">Set your image</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="about">About</string>
+    <string name="login_success">login success</string>
+    <string name="login">LOGIN</string>
+    <string name="Username">Email</string>
+    <string name="Password">Password</string>
+    <string name="forgot_your_password">Forgot your password ?</string>
+    <string name="go">GO</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="next">NEXT</string>
+
+    <string name="hint_username">Enter a new username</string>
+    <string name="hint_email_reset">Enter your email</string>
+    <string name="enter_group_name">Enter group name</string>
+    <string name="default_notification_channel_id">default</string>
+    <string name="channel_name">channel_name</string>
+
+    <string name="font_family">fonts/AvenirLTStd-Book.otf</string>
+
+    <string name="chats">Chats</string>
+    <string name="groups">Groups</string>
+    <string name="profile">Profile</string>
+
+
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_notifications">Notifications</string>
+    <string name="summary_choose_ringtone">Choose notification sound</string>
+    <string name="pref_header_about">About</string>
+    <string name="title_gallery_storage">Default Storage</string>
+    <string name="title_new_notification_sound">New message notification</string>
+    <string name="title_vibrate">Vibrate</string>
+    <string name="summary_vibrate">Vibrate on new notification</string>
+    <string name="notifications_new_message">notifications_new_message</string>
+    <string name="key_notifications_new_message_ringtone">key_notifications_new_message_ringtone</string>
+    <string name="key_vibrate">key_vibrate</string>
+    <string name="key_fingerprint">key_fingerprint</string>
+    <string name="title_finger">FingerPrint</string>
+
+    <string name="choose_email_client">Choose email client</string>
+
+    <string-array name="Leave">
+        <item>Casual</item>
+        <item>sick</item>
+        <item>Medical</item>
+        <item>Halfday</item>
+    </string-array>
+
+    <string-array name="Applyto">
+        <item>Reporting Manager</item>
+        <item>HR</item>
+        <item>Project Manager</item>
+        <item>Team Leader</item>
+        <item>Admin</item>
+    </string-array>
+
+
+    <string-array name="Security">
+        <item>Select Security Question?</item>
+        <item>What is your First Bike?</item>
+        <item>Your Nick Name?</item>
+        <item>Your favourite color?</item>
+        <item>Your Hobby?</item>
+    </string-array>
+
+    <string-array name="BloodGroup">
+        <item>Select Blood Group</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+
+    <string-array name="Department">
+        <item>Select Department</item>
+        <item>Employee</item>
+        <item>HR</item>
+        <item>Admin</item>
+    </string-array>
+
+    <string-array name="DepartmentType">
+        <item>Select Department Type</item>
+        <item>TicketingTool Department</item>
+        <item>Hardware Department</item>
+        <item>Software Department</item>
+        <item>Network Department</item>
+    </string-array>
+    <string-array name="Details">
+        <item>Aadhar card</item>
+        <item>Pan card</item>
+        <item>Passport</item>
+    </string-array>
+    <string-array name="Task_Status">
+        <item>Running</item>
+        <item>Discussing</item>
+        <item>Completed</item>
+    </string-array>
+
+    <string-array name="Months">
+        <item>Monthly</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="Monthly">
+        <item>Monthly</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="Yearly">
+        <item>Yearly</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2025</item>
+        <item>2026</item>
+    </string-array>
+
+    <string-array name="Expenses">
+        <item>Mobile</item>
+        <item>General Expenses</item>
+        <item>Conveyances</item>
+    </string-array>
+    <string-array name="money">
+        <item>Select</item>
+        <item>Cash</item>
+        <item>Credit Card</item>
+    </string-array>
+    <string-array name="Conveyances">
+        <item>Select</item>
+        <item>Own Car</item>
+        <item>Own 2 Wheeler</item>
+        <item>Taxi</item>
+        <item>Auto</item>
+        <item>Other Public Transport</item>
+    </string-array>
+    <string-array name="Generalexpenses">
+        <item>Select</item>
+        <item>Courier Charges</item>
+        <item>Diesel and Petrol Charges</item>
+        <item>Electricity and Water Bills</item>
+        <item>Entertainment and Business promotion</item>
+        <item>Gifts and Presentations</item>
+        <item>Media Charges</item>
+        <item>Medical</item>
+        <item>Office Telephone Bills</item>
+        <item>Other Expenses</item>
+        <item>Printing and Stationary</item>
+        <item>Rent Bills</item>
+        <item>Tea or Coffee and etc Bills</item>
+        <item>HouseKeeping and Miscellanous Charges</item>
+    </string-array>
+    <string-array name="DocumentType">
+        <item>Joining Letter</item>
+        <item>Re-leaving Letter</item>
+        <item>Present Offer Letter</item>
+        <item>Previous Offer Letter</item>
+        <item>Prevoius Experience Letter</item>
+        <item>Previous PaySlips(3 Months)</item>
+        <item>Certificates</item>
+        <item>Payslips</item>
+        <item>Project Documents</item>
+        <item>Re-imbursement Slips</item>
+        <item>Course certificates</item>
+        <item>Patent Certificates</item>
+        <item>Bank Statements(Past 3Months)</item>
+    </string-array>
+    <string name="loading">Loading…</string>
+
+    <string-array name="Priority">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
+
+    <string-array name="select">
+        <item>Select Department</item>
+        <item>hardware</item>
+        <item>software</item>
+        <item>networking</item>
+
+    </string-array>
+    <string-array name="status">
+        <item>Status</item>
+        <item>solved</item>
+        <item>pending</item>
+        <item>solved and close Ticket</item>
+    </string-array>
+
+    <string-array name="RewardsCategory">
+        <item>Performance Based</item>
+        <item>Project Based</item>
+        <item>Punctuality Based</item>
+        <item>Client Based</item>
+        <item>Reference Based</item>
+    </string-array>
+    <string-array name="RewardsType">
+        <item>1 Month</item>
+        <item>3 Months</item>
+        <item>Yearly</item>
+    </string-array>
+    <string-array name="Path">
+        <item>Choose</item>
+        <item>YES</item>
+        <item>NO</item>
+        <item>EDIT</item>
+    </string-array>
+    <string-array name="personalid">
+        <item>Please Select Your Personal_ID</item>
+        <item>Aadhaar Card</item>
+        <item>PAN Card</item>
+        <item>Driving License</item>
+        <item>Voter ID</item>
+        <item>Passport</item>
+
+    </string-array>
+
+    <string-array name="visitortype">
+        <item>Please Select Your Type of visit</item>
+        <item>Interview</item>
+        <item>Visitor</item>
+        <item>Contractor</item>
+        <item>Vendor</item>
+        <item>VIP</item>
+
+    </string-array>
+
+
+    <!-- Services -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="Paragraph"> Websites are not just to look beautiful; we work to do business better from it.\n\n
+We design and develop good and pleasing websites. We trust in the quality of visuals, merged with proper functionality to make it user friendly.\n\n
+We first completely understand your need for a website. Once you make us understand your target, we kick start your project form the scratch and we make sure the deliverables are up to your expectation by means of design, quality and support services.\n\n
+ -> We built websites for greater responses.\n
+ -> Our execution differs for every industry we work.\n
+ -> We consider every customer is valuable and give individual support.\n
+ -> We always educate the customers about, need of use latest technology.\n
+ -> We respond quickly still maintain quality.\n\n
+Check with us, want we can to the best for the idea you and have in your mind?\n\n </string>
+
+    <string name="Paragraph1"> In this competitive world, we have just few minutes to grab the audience attention. We develop website that will convert viewers as your valuable customers for you.\n
+        To serve our clients with everything they need relating to their website and few listed down\n\n
+-> Analysis and Research Modules\n
+-> Creative Design\n
+-> Easy User Interfaces\n
+-> Search Engine Optimization (SEO)\n
+-> Search Engine Marketing (SEM)\n
+-> Responsive Web Design for all Devices\n
+-> Content Management Solutions\n
+-> Custom WordPress Development\n
+-> Website Hosting\n
+-> Website Redesign\n
+-> Website Maintenance\n\n
+We have a structured route to build in web design that can bring all new customers to your business, and even to promote yourself or your existing products online. Our clients have an edge to get better and significant business growth with our well-equipped and professionally designed websites.\n </string>
+
+    <string name="Paragraph2">"In today's scenario, people find online method as convenient way to do shopping. So, it time to move ahead to start your e-store and make your business online and promote your products globally. Do you ever counted the number of your website visitors are becoming your customers?\n
+It is all about "Make hay while the sun shines"; today people spend a lot of money online and It's time to take smart move and make use of current technology and grow your business at faster pace and to larger audience. No worry on size of your business; you can take advantage from it.\n
+We are here to happily educate and help you to make your e-commerce website as better medium to do business. We assist you by providing all required branding solution and software for your e-store which allows you to manage your store products with an excellent user interface, cool lists of product categories, user friendly shopping carts and secured administrative authentication, orders and offers management with an ease.\n
+As per demands, we can also add features for you to manage your inventory, coupons and sales reports without getting any help from technical people. When it comes to the visitor part, we can provide features that will allow them to log in via their Social Network account (like FaceBook, Google+1). We also assist people who seek help to update current e-commerce website.\n
+-> Site Management\n
+-> Search Engine Optimization\n
+-> Marketing Promotions and Tools\n
+-> Shipping\n
+-> Payment Gateway\n
+-> Order Management\n
+-> Security\n</string>
+
+    <string name="Paragraph3">It proven that it is the best ROI. So what stops you to make your business online?\n
+Call us for any query or Get your Quote! </string>
+
+    <string name="Paragraph4">Building a website is good move to promote your business, so your online medium is ready. What Next to bring in the traffic on to your website, every day. This system which helps you to do this is named "Search Engine Optimisation (SEO).\n
+How to do this? Our dedicated efficient SEO team work to increase your site visitors, repeated viewers, and your online exposure.\n
+Search engine optimization (SEO) is the process of affecting the visibility of a website or a web page in a search engine's unpaid results - often referred to as "natural," "organic," or "earned" results. In general, the earlier (or higher ranked on the search results page), and more frequently a site appears in the search results list, the more visitors it will receive from the search engine's users. SEO may target different kinds of search, including image search, local search, video search, academic search, news search and industry-specific vertical search engines.\n
+As an Internet marketing strategy, SEO considers how search engines work, what people search for, the actual search terms or keywords typed into search engines and which search engines are preferred by their targeted audience. Optimizing a website may involve editing its content, HTML and associated coding to both increase its relevance to specific keywords and to remove barriers to the indexing activities of search engines. Promoting a site to increase the number of back links, or inbound links, is another SEO tactic.\n
+So, the result of SEO depends you connect SEO strategy with web technology, there are may be factors that need to be noticed in order to get fruitful. Always we are here assisting you to meet your business marketing plan to be successful.\n </string>
+
+
+    <string name="Paragraph5">Social Media is the today way for communication that is dominating the regular publishing media. Social media marketing programs usually focus to create content that attracts attention and encourages readers to share it across their social networks.\n\n
+The outcome of the electronic word of mouth (eWoM) refers to any statement consumers share via the Internet (e.g., web sites, social networks, instant messages, news feeds) about an event, product, service, brand or company. When the underlying message spreads from user to user and because the information it appears to come from a trusted and reliable third-party source, it play a vital role to promote brand or company itself, this form of marketing results in earned media rather than paid media. We help you here to prepare content and make your business marketing to current trend.\n </string>
+
+    <string name="Paragraph6">Search engine marketing (SEM) is a form of Internet marketing that involves the promotion of websites by increasing their visibility in search engine results pages (SERPs) primarily through paid advertising.[1] SEM may incorporate search engine optimization (SEO), which adjusts or rewrites website content and site architecture to achieve a higher ranking in search engine results pages to enhance pay per click (PPC) listings\n
+"Search Engine Marketing" was once was used as an umbrella term to encompass both SEO (search engine optimization) and paid search activities. Over time, the industry has adopted the SEM acronym to refer solely to paid search.\n
+At Search Engine Land, we generally use SEM and/or "Paid Search" to refer to paid listings, with the longer term of search marketing used to encompass both SEO and SEM. Below are some of the most common terms also used to refer to SEM activities\n
+-> Paid search ads\n
+-> Paid search advertising\n
+-> PPC (pay-per-click)*\n
+-> PPC (pay-per-call) – some ads, particularly those served to mobile search users, may be charged by the number of clicks that resulted in a direct call from a smartphone.\n
+-> CPC (cost-per-click)*\n
+-> Most search ads are sold on a CPC / PPC basis, but some advertising options may also be sold on a CPM basis.\n
+-> Internet marketing\n
+-> Dynamic keyword insertion\n
+-> Search engine reputation management\n
+-> Search engine optimization\n
+-> Web marketing\n\n </string>
+
+    <string name="Paragraph7">
+-> Manage complex customer relationships across a variety of channels – both digital and traditional.\n
+-> Respond to and initiate dynamic customer interactions.\n
+-> Extract value from big data to make better decisions faster.\n\n</string>
+
+    <string name="Paragraph8">
+-> Email Marketing is Targeted\n
+-> Email Marketing Increases Brand Awareness\n
+-> Email Marketing is Easily Shareable.\n
+-> Email Marketing is Measurable\n
+-> Email Marketing is Cost effective.\n\n</string>
+
+    <string name="Paragraph9">
+-> It brings in new visitors every day\n
+-> It provides trustworthy impression\n
+-> It is the best ROI spent on advertising\n
+-> It gives incomparable value to your clients\n
+-> It is absolutely cost-effective\n
+-> It is keeps you in race among your business challengers\n\n</string>
+
+
+</resources>
